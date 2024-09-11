@@ -16,8 +16,6 @@ RUN yarn install --network-timeout 600000
 # Copy the application code
 COPY . .
 
-RUN sed -i -e '78,99d' components/Navigator.tsx
-
 # Build the Next.js application for production
 RUN yarn && yarn build
 
