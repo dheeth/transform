@@ -2,7 +2,7 @@
 FROM node:16.20.2-alpine
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /transform
 
 # Install required binaries
 RUN apk update && apk add git autoconf automake gcc build-base
